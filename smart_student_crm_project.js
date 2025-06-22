@@ -1,4 +1,4 @@
-// 📁 Apex Class: StudentController.cls
+// Apex Class: StudentController.cls
 public with sharing class StudentController {
     @AuraEnabled(cacheable=true)
     public static List<Student__c> getStudents() {
@@ -22,7 +22,7 @@ public with sharing class StudentController {
 }
 
 
-<!-- 📁 Component: StudentList.cmp -->
+<!--  Component: StudentList.cmp -->
 <aura:component controller="StudentController" implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
     <aura:attribute name="students" type="Student__c[]" />
     <aura:handler name="init" value="this" action="{!c.doInit}" />
@@ -35,7 +35,7 @@ public with sharing class StudentController {
 </aura:component>
 
 
-// 📁 Controller: StudentListController.js
+// Controller: StudentListController.js
 ({
     doInit: function(component, event, helper) {
         var action = component.get("c.getStudents");
@@ -50,7 +50,7 @@ public with sharing class StudentController {
 })
 
 
-<!-- 📁 Component: StudentCard.cmp -->
+<!--  Component: StudentCard.cmp -->
 <aura:component>
     <aura:attribute name="student" type="Student__c" />
     <lightning:card title="{!v.student.Name}">
@@ -62,7 +62,7 @@ public with sharing class StudentController {
 </aura:component>
 
 
-<!-- 📁 Component: StudentForm.cmp -->
+<!--  Component: StudentForm.cmp -->
 <aura:component controller="StudentController">
     <aura:attribute name="newStudent" type="Student__c" default="{'sobjectType': 'Student__c'}"/>
 
@@ -77,7 +77,7 @@ public with sharing class StudentController {
 </aura:component>
 
 
-// 📁 Controller: StudentFormController.js
+//  Controller: StudentFormController.js
 ({
     addStudent: function(component, event, helper) {
         var action = component.get("c.addStudent");
