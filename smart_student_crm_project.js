@@ -96,28 +96,4 @@ public with sharing class StudentController {
 })
 
 
-// 📁 README.md
-/*
-# 🎓 Smart Student CRM
 
-A mini-CRM built with Salesforce Lightning Components and Apex to manage student records, academic performance, and feedback in colleges.
-
-## 🚀 Features
-- Add/edit/delete student profiles
-- View academic performance and feedback
-- Responsive UI using Lightning Design System
-
-## 🛠 Tech Stack
-- Salesforce Lightning Components
-- Apex (Server-side logic)
-- JavaScript (Client-side controller)
-
-## 🖼 Screenshot
-Add a screenshot or demo GIF here
-
-## 📦 Setup
-1. Create custom object: `Student__c`
-2. Add fields: Name, Roll Number, Department, GPA, Feedback
-3. Create Lightning Components and Apex class
-4. Deploy in Lightning App Builder
-*/
